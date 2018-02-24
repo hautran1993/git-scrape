@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>New York Times Search</title>
+  <title>Scraper</title>
   <!-- Bootswatch Styling for Improving the Aesthetics -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
 
@@ -25,7 +25,7 @@
 
     <!-- Jumbotron for Title -->
     <div class="jumbotron" style="background-color: #20315A ; color: white;">
-      <h1 class="text-center"><strong><i class="fa fa-newspaper-o"></i> New York Times Search</strong></h1>
+      <h1 class="text-center"><strong><i class="fa fa-newspaper-o"></i>Note Scraper</strong></h1>
     </div>
 
     <!-- Row for Searching New York Times -->
@@ -44,33 +44,12 @@
 
            <!-- this is where certain scrapes will go through -->
               <div id="wrapper">
-                <h1>Note Scraper</h1>
+                <h1>To write your own notes, click on the article name</h1>
                 <div id="articles"></div>
                 <div id="notes"></div>
               </div>
 
               <!-- Here we capture the number of records that the user wants to retrieve  -->
-              <div class="form-group">
-                <label for="pwd">Number of Records to Retrieve:</label>
-                <select class="form-control" id="num-records-select">
-							<option value="1">1</option>
-							<!-- Setting the option for 5 as default -->
-							<option value="5" selected>5</option>
-							<option value="10">10</option>
-						</select>
-              </div>
-
-              <!-- Here we capture the Start Year Parameter-->
-              <div class="form-group">
-                <label for="start-year">Start Year (Optional):</label>
-                <input type="text" class="form-control" id="start-year">
-              </div>
-
-              <!-- Here we capture the End Year Parameter -->
-              <div class="form-group">
-                <label for="end-year">End Year (Optional):</label>
-                <input type="text" class="form-control" id="end-year">
-              </div>
 
               <!-- Here we have our final submit button -->
               <button type="submit" class="btn btn-default" id="run-search"><i class="fa fa-search"></i> Search</button>
@@ -84,8 +63,6 @@
 
     <!-- This row will handle all of the retrieved articles -->
     <div id="wrapper">
-      <h1>Note Scraper</h1>
-      <h2><i>If you can do this...the homework should be no problem.</i></h2>
       <div id="articles"></div>
       <div id="notes"></div>
     </div>
@@ -96,7 +73,7 @@
 
         <!-- Line Break followed by closing -->
         <hr>
-        <h5 class="text-center"><small>Made by Ahmed with lots and lots of <i class="fa fa-heart"></i></small></h5>
+        <h3 class="text-center"><small>Hau Tran<i class="fa fa-heart"></i></small></h3>
 
       </div>
     </div>
