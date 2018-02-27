@@ -28,15 +28,15 @@ app.use(express.static("public"));
 
 // By default mongoose uses callbacks for async queries, we're setting it to use promises (.then syntax) instead
 // Connect to the Mongo DB
-mongoose.Promise = Promise;
+// npm start
+mongoose.connect("mongodb://localhost/newScraper", {
+  useMongoClient: true
+});
 
-//extra code to work for heroku-------
-var urstring = process.env.MONGOD_URI || "mongodb://localhost/newScraper";
 
-mongoose.connect(urstring);
+// var urstring = process.env.MONGOD_URI || "mongodb://localhost/newScraper";
 
-//extra code to work for heroku-------
-//--
+// mongoose.connect(urstring);
 
 // Routes
 
@@ -134,5 +134,4 @@ app.post("/articles/:id", function(req, res) {
 app.listen(PORT, function() {
   console.log("App running on port " + PORT + "!");
 });
-
 
