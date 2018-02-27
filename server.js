@@ -30,7 +30,7 @@ app.use(express.static("public"));
 // Connect to the Mongo DB
 // npm start
 
-mongoose.connect(process.env.MONGOD_URI || "mongodb://localhost/newScraper", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/newScraper", {
   useMongoClient: true
 });
 
